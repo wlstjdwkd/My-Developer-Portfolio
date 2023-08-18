@@ -11,51 +11,68 @@ import {
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import profileImage from "../../assets/images/profileImage.jpg";
+import PersonalDetail from "./PersonalDetail";
+import Certifications from "./Certifications";
 
 function About() {
   console.log("About");
   return (
-    <Container>
-      <Box style={{ padding: "2rem" }}>
+    <Container
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
+      <Box style={{ padding: "2rem", width: "100%" }}>
         <Grid container spacing={5} alignItems="center">
           <Grid item xs={12} sm={4}>
             <Avatar
-              src="https://via.placeholder.com/150" // 대신 원하시는 이미지 URL을 넣으세요
+              src={profileImage} // 대신 원하시는 이미지 URL을 넣으세요
               alt="Profile Image"
               sx={{ width: 150, height: 150 }}
             />
           </Grid>
-          <Grid item xs={12} sm={8}>
-            <Typography variant="h4">이름</Typography>
+          <Grid item xs={12} sm={4}>
+            <Typography variant="h4">방진성</Typography>
             <Typography variant="body1">성별: 남자</Typography>
-            <Typography variant="body1">나이: 25</Typography>
+            <Typography variant="body1">나이: 26</Typography>
             <Typography variant="body1">생년월일: 1998년 11월 26일</Typography>
-            <Typography variant="body1">영문이름: Name Surname</Typography>
             <Box display="flex" alignItems="center" marginTop="0.5rem">
               <MailOutlineIcon style={{ marginRight: "0.5rem" }} />
-              <Typography variant="body1">email@example.com</Typography>
+              <Typography variant="body1">xkakrlfh@naver.com</Typography>
             </Box>
             <Box display="flex" alignItems="center" marginTop="0.5rem">
               <PhoneAndroidIcon style={{ marginRight: "0.5rem" }} />
-              <Typography variant="body1">+82-10-1234-5678</Typography>
+              <Typography variant="body1">+82-10-4588-5698</Typography>
             </Box>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Typography variant="body1">한문이름: 房眞聲</Typography>
+            <Typography variant="body1">영문이름: Bang JinSeong</Typography>
+            <Typography variant="body1">
+              주소: <br />
+              (61766) 광주광역시 남구 효우로 332
+            </Typography>
             <Box display="flex" alignItems="center" marginTop="0.5rem">
               <InstagramIcon style={{ marginRight: "0.5rem" }} />
               <Link
-                href="https://instagram.com/your_username"
+                href="https://instagram.com/bvng._.mooomiin"
                 target="_blank"
                 rel="noopener noreferrer"
                 color="inherit"
               >
-                @your_username
+                @bvng._.mooomiin
               </Link>
             </Box>
           </Grid>
         </Grid>
       </Box>
+      <br />
+      <hr />
 
+      <PersonalDetail />
+
+      <Certifications />
       {/* Hero Section */}
-      <Box my={5}>
+      <Box my={5} style={{ textAlign: "center" }}>
         <Typography variant="h2">안녕하세요, 저는 방진성입니다.</Typography>
         <Typography variant="h5">백엔드 개발자로 활동 중입니다.</Typography>
         <Button variant="contained" color="primary">
@@ -64,7 +81,7 @@ function About() {
       </Box>
 
       {/* Skills Section */}
-      <Grid container spacing={3}>
+      <Grid container spacing={3} justify="center">
         <Grid item xs={4}>
           <Paper>
             <Typography variant="h6">React</Typography>
