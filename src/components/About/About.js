@@ -7,6 +7,10 @@ import {
   Box,
   Avatar,
   Link,
+  ListItem,
+  List,
+  ListItemText,
+  Divider,
 } from "@mui/material";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
@@ -14,6 +18,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import profileImage from "../../assets/images/profileImage.jpg";
 import PersonalDetail from "./PersonalDetail";
 import Certifications from "./Certifications";
+import Educations from "./Educations";
 
 function About() {
   console.log("About");
@@ -71,6 +76,8 @@ function About() {
       <PersonalDetail />
 
       <Certifications />
+
+      <Educations />
       {/* Hero Section */}
       <Box my={5} style={{ textAlign: "center" }}>
         <Typography variant="h2">안녕하세요, 저는 방진성입니다.</Typography>
@@ -106,6 +113,10 @@ function About() {
           연락하기
         </Button>
       </Box>
+
+      <Typography variant="h5" gutterBottom>
+        수상 내역
+      </Typography>
     </Container>
   );
 }

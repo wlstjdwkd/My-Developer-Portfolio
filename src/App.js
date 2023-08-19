@@ -41,12 +41,12 @@ function App() {
     <Router>
       <Header />
       <div style={{ padding: "20px" }}>
-        {/* <Routes>
+        <Routes>
           <Route exact path="/" element={Home} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={Projects} />
           <Route path="/contact" element={Contact} />
-        </Routes> */}
+        </Routes>
         <StyledContainer>
           <StyledTypography variant="h2" gutterBottom>
             안녕하세요, 방진성입니다.
