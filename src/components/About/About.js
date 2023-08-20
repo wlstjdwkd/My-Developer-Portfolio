@@ -15,10 +15,13 @@ import {
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import profileImage from "../../assets/images/profileImage.jpg";
 import PersonalDetail from "./PersonalDetail";
 import Certifications from "./Certifications";
 import Educations from "./Educations";
+import Skills from "./Skills";
+
+import profileImage from "../../assets/images/profileImage.jpg";
+import springbootImage from "../../assets/images/springboot.png";
 
 function About() {
   console.log("About");
@@ -79,16 +82,16 @@ function About() {
 
       <Educations />
       {/* Hero Section */}
-      <Box my={5} style={{ textAlign: "center" }}>
+      {/* <Box my={5} style={{ textAlign: "center" }}>
         <Typography variant="h2">안녕하세요, 저는 방진성입니다.</Typography>
         <Typography variant="h5">백엔드 개발자로 활동 중입니다.</Typography>
         <Button variant="contained" color="primary">
           내 프로젝트 보기
         </Button>
-      </Box>
+      </Box> */}
 
       {/* Skills Section */}
-      <Grid container spacing={3} justify="center">
+      {/* <Grid container spacing={3} justify="center">
         <Grid item xs={4}>
           <Paper>
             <Typography variant="h6">React</Typography>
@@ -96,7 +99,7 @@ function About() {
           </Paper>
         </Grid>
         {/* ... other skills */}
-      </Grid>
+      {/* </Grid> */}
 
       {/* Projects Highlight */}
       {/* ... similar to Skills section but with project details */}
@@ -105,18 +108,67 @@ function About() {
       {/* ... possibly use Card component from MUI with testimonial text and author image. */}
 
       {/* Call to Action */}
-      <Box my={5}>
+      {/* <Box my={5}>
         <Typography variant="h4">
           저와 함께 프로젝트를 시작하실 준비가 되셨나요?
         </Typography>
         <Button variant="contained" color="secondary">
           연락하기
         </Button>
-      </Box>
+      </Box> */}
 
-      <Typography variant="h5" gutterBottom>
-        수상 내역
-      </Typography>
+      <Skills
+        imageURL="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+        label="Java"
+        proficiency={90}
+      />
+      <Skills
+        imageURL="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        label="JavaScript"
+        proficiency={70}
+      />
+      <Skills
+        imageURL="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+        label="Spring"
+        proficiency={90}
+      />
+      <Skills imageURL={springbootImage} label="SpringBoot" proficiency={90} />
+      <Skills
+        imageURL="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg
+        "
+        label="React"
+        proficiency={70}
+      />
+      <Skills
+        imageURL="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg
+        "
+        label="MySQL"
+        proficiency={90}
+      />
+      <Skills
+        imageURL="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg
+        "
+        label="AWS"
+        proficiency={80}
+      />
+      <Skills
+        imageURL="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg
+        "
+        label="Docker"
+        proficiency={80}
+      />
+      <Skills
+        imageURL="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg
+        "
+        label="Jenkins"
+        proficiency={70}
+      />
+      <Skills
+        imageURL="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg
+        "
+        label="Git"
+        proficiency={80}
+      />
     </Container>
   );
 }
