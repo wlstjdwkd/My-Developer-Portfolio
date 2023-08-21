@@ -10,7 +10,9 @@ pipeline {
         
         stage('Install dependencies') {
             steps {
-                sh 'npm install'
+                // package-lock.json을 기반으로 의존성 설치
+                //npm install 보다 안정적
+                sh 'npm ci'
             }
         }
 
