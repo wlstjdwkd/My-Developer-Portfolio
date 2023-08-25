@@ -1,9 +1,9 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs 'my-nodejs'
-    }
+    // tools {
+    //     nodejs 'my-nodejs'
+    // }
 
     stages {
         stage('Checkout') {
@@ -14,11 +14,11 @@ pipeline {
         
         stage('Install dependencies') {
             steps {
-                script{
-                    def npm = tool name : 'my-nodejs', type: 'NodeJSInstallation'
-                    echo 'npm install...'
-                    env.PATH = "${npm}/bin:${env.PATH}"  // Node.js와 npm의 경로를 환경 변수에 추가합니다.
-                }
+                // script{
+                //     def npm = tool name : 'my-nodejs', type: 'NodeJSInstallation'
+                //     echo 'npm install...'
+                //     env.PATH = "${npm}/bin:${env.PATH}"  // Node.js와 npm의 경로를 환경 변수에 추가합니다.
+                // }
                 sh 'npm install'
             }
         }
