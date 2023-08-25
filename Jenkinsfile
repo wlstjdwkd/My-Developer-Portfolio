@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'my-nodejs'
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -10,9 +14,11 @@ pipeline {
         
         stage('Install dependencies') {
             steps {
-                // package-lock.json을 기반으로 의존성 설치
-                //npm install 보다 안정적
-                sh 'npm ci'
+                script{
+                    def npm = tool name : 'my-nodejs', type: 'NodeJSInstallation'
+                    env.PATH = "${npm}/bin:${env.PATH}"  // Node.js와 npm의 경로를 환경 변수에 추가합니다.
+                }
+                sh 'npm install'
             }
         }
 
