@@ -3,7 +3,7 @@ services:
   jenkins:
     build:
       context: .
-      dockerfile: dockerfile/Dockerfile.jenkins
+      dockerfile: dockerfiles/Dockerfile.jenkins
     ports:
       - "8080:8080"
       - "50000:50000"
@@ -17,7 +17,7 @@ services:
   react-app:
     build:
       context: .
-      dockerfile: dockerfile/Dockerfile.react
+      dockerfile: dockerfiles/Dockerfile.react
     ports:
       - "80:80"
 
