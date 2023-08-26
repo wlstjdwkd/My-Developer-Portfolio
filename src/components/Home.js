@@ -26,7 +26,7 @@ function Home() {
         <Typography variant="subtitle1">
           졸업 후에도 두 번의 소프트웨어 교육을 수강함으로써 공백이 없게 준비하고 있습니다.
           커뮤니케이션 전문 개발자로서 다양한 프로젝트 경험을 바탕으로 팀원들과
-          원활하게 협업하며 목표를 효과적으로 달성하고자 합니다. 해치웠나?
+          원활하게 협업하며 목표를 효과적으로 달성하고자 합니다.
         </Typography>
       </Grid>
       <Grid item xs={12} md={6} container justifyContent="flex-end">
