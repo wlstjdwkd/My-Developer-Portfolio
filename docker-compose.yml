@@ -1,7 +1,9 @@
 version: "3"
 services:
   jenkins:
-    image: jenkins/jenkins:lts
+    build:
+      context: .
+      dockerfile: dockerfile/Dockerfile.jenkins
     ports:
       - "8080:8080"
       - "50000:50000"
@@ -15,7 +17,7 @@ services:
   react-app:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: dockerfile/Dockerfile.react
     ports:
       - "80:80"
 
