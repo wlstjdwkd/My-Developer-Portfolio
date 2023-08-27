@@ -9,6 +9,8 @@ import {
 } from "@mui/material";
 
 import stopwaitingImage from "../../assets/images/stopwaiting.png";
+import weffyImage from "../../assets/images/WEFFY.png";
+import umbrellaImage from "../../assets/images/umbrella.jpg";
 
 const projects = [
   {
@@ -18,11 +20,24 @@ const projects = [
     projectUrl: "https://github.com/wlstjdwkd/StopWaiting",
   },
   {
-    title: "Project 2",
+    title: "중소기업형 인사급여휴가관리 시스템",
     description: "This is a brief description about project 2.",
     imageUrl: "path_to_project_2_image.jpg",
     projectUrl: "http://example2.com",
   },
+  {
+    title: "WEFFY",
+    description: "SSAFY를 위한 화상 미팅 프로그램",
+    imageUrl: weffyImage,
+    projectUrl: "https://github.com/wlstjdwkd/WEFFY",
+  },
+  {
+    title: "포트폴리오 사이트",
+    description: "나 자신을 알리기 위한 포트폴리오 사이트",
+    imageUrl: umbrellaImage,
+    projectUrl: "https://github.com/wlstjdwkd/My-Developer-Portfolio",
+  },
+
   // ... 여러 프로젝트들을 추가하세요
 ];
 
@@ -31,7 +46,9 @@ function Projects() {
     <Grid container spacing={4}>
       {projects.map((project, index) => (
         <Grid item xs={12} sm={6} md={4} key={index}>
-          <Card>
+          <Card
+            style={{ height: "100%", display: "flex", flexDirection: "column" }}
+          >
             <CardActionArea href={project.projectUrl} target="_blank">
               <CardMedia
                 component="img"
