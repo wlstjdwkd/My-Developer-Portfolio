@@ -18,15 +18,25 @@ import Toolbar from "@mui/material/Toolbar";
 import Header from "./components/Header/Header";
 import "./App.css";
 
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+const theme = createTheme({
+  typography: {
+    fontFamily: '"Dongle", sans-serif', // 위에서 선택한 폰트를 사용
+    fontSize: 20,
+  },
+});
+
 function Contact() {
   return <div>Contact</div>;
 }
 
 function App() {
   return (
-    <Router>
-      <AppContent />
-    </Router>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <AppContent />
+      </Router>
+    </ThemeProvider>
   );
 }
 
