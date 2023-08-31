@@ -27,7 +27,7 @@ function Certifications() {
   }));
 
   return (
-    <ThemeProvider theme={theme}>
+    // <ThemeProvider theme={theme}>
       <Container maxWidth="sm">
         <Paper elevation={3} style={{ marginBottom: "20px" }}>
           <Accordion>
@@ -191,7 +191,7 @@ function Certifications() {
           </Accordion>
         </Paper>
       </Container>
-    </ThemeProvider>
+    // </ThemeProvider>
   );
 }
 
