@@ -37,6 +37,12 @@ const projects = [
     imageUrl: umbrellaImage,
     projectUrl: "https://github.com/wlstjdwkd/My-Developer-Portfolio",
   },
+  {
+    title: "포도은행 + 디비딩",
+    description: "핀테크 프로젝트(진행중)",
+    imageUrl: umbrellaImage,
+    projectUrl: "",
+  },
 
   // ... 여러 프로젝트들을 추가하세요
 ];
