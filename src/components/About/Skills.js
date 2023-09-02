@@ -3,7 +3,7 @@ import { LinearProgress, Typography, Box } from "@mui/material";
 
 function Skills({ imageURL, label, proficiency }) {
   return (
-    <Box display="flex" alignItems="center" marginBottom={3}>
+    <Box display="flex" alignItems="center" marginBottom={3} paddingX={3}>
       <Box display="flex" alignItems="center" width={450}>
         <img
           src={imageURL}
