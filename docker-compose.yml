@@ -20,6 +20,8 @@ services:
       dockerfile: dockerfiles/Dockerfile.react
     ports:
       - "80:80"
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt
 
 networks:
   portfolio:
