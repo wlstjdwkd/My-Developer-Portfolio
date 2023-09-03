@@ -15,7 +15,7 @@ services:
       - portfolio
 
   react-app:
-    image: bangjinseong/my-react-app
+    image: bangjinseong/my-react-app:${BUILD_NUMBER}
     build:
       context: .
       dockerfile: dockerfiles/Dockerfile.react
