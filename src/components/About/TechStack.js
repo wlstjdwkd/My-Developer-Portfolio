@@ -2,15 +2,9 @@ import React from "react";
 import {
   Container,
   Typography,
-  Divider,
   Paper,
-  Box,
-  List,
-  ListItem,
-  ListItemText,
   Accordion,
   AccordionSummary,
-  AccordionDetails,
 } from "@mui/material";
 import { styled } from "@mui/system";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -18,12 +12,6 @@ import Skills from "./Skills";
 import springbootImage from "../../assets/images/springboot.png";
 
 function TechStack() {
-  const StyledListItemText = styled(ListItemText)(({ theme }) => ({
-    "& .MuiListItemText-primary": {
-      fontWeight: "bold",
-      color: theme.palette.primary.main,
-    },
-  }));
   return (
     <Container maxWidth="sm">
       <Paper elevation={3} style={{ marginBottom: "20px" }}>

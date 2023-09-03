@@ -7,7 +7,7 @@ function Skills({ imageURL, label, proficiency }) {
       <Box display="flex" alignItems="center" width={450}>
         <img
           src={imageURL}
-          style={{ width: "50px", height: "50px" }} // 원하는 크기로 조정하세요.
+          style={{ width: "50px", height: "50px" }} 
         />
 
         <Typography variant="h6" marginLeft={8}>

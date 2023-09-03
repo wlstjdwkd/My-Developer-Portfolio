@@ -7,21 +7,19 @@ import {
   Link as RouterLink,
 } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import { Button, Typography, Container, Grid, Paper, Box } from "@mui/material";
 
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Home from "./components/Home";
 
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Header from "./components/Header/Header";
+import Header from "./components/Common/Header";
+import Footer from "./components/Common/Footer";
 import "./App.css";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 const theme = createTheme({
   typography: {
-    fontFamily: '"Dongle", sans-serif', // 위에서 선택한 폰트를 사용
+    fontFamily: '"Dongle", sans-serif',
     fontSize: 20,
   },
 });
@@ -34,7 +32,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <AppContent />
+        <div className="app-root">
+          <AppContent className="content-wrap" />
+        </div>
       </Router>
     </ThemeProvider>
   );
@@ -44,9 +44,9 @@ function AppContent() {
   const location = useLocation();
 
   return (
-    <>
+    <div className="app-content">
       <Header />
-      <div style={{ padding: "20px" }}>
+      <div style={{ padding: "20px", flexGrow: 1 }}>
         <TransitionGroup>
           <CSSTransition key={location.key} classNames="fade" timeout={300}>
             <Routes>
@@ -58,7 +58,8 @@ function AppContent() {
           </CSSTransition>
         </TransitionGroup>
       </div>
-    </>
+      <Footer className="footer-fixed" />
+    </div>
   );
 }
 

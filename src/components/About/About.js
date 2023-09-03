@@ -1,16 +1,10 @@
 import {
-  Button,
   Typography,
   Container,
   Grid,
-  Paper,
   Box,
   Avatar,
   Link,
-  ListItem,
-  List,
-  ListItemText,
-  Divider,
 } from "@mui/material";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
@@ -19,10 +13,8 @@ import PersonalDetail from "./PersonalDetail";
 import Certifications from "./Certifications";
 import Educations from "./Educations";
 import TechStack from "./TechStack";
-import Skills from "./Skills";
 
 import profileImage from "../../assets/images/profileImage.jpg";
-import springbootImage from "../../assets/images/springboot.png";
 
 function About() {
   console.log("About");
@@ -85,8 +77,6 @@ function About() {
 
       <TechStack />
 
-      
-      
     </Container>
   );
 }

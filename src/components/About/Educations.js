@@ -4,20 +4,16 @@ import {
   Typography,
   Divider,
   Paper,
-  Box,
   List,
   ListItem,
   ListItemText,
   Accordion,
   AccordionSummary,
-  AccordionDetails,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { styled } from "@mui/system";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 function Educations() {
-  const theme = createTheme();
 
   const StyledListItemText = styled(ListItemText)(({ theme }) => ({
     "& .MuiListItemText-primary": {
@@ -27,7 +23,6 @@ function Educations() {
   }));
 
   return (
-    // <ThemeProvider theme={theme}>
     <Container maxWidth="sm">
       <Paper elevation={3} style={{ marginBottom: "20px" }}>
         <Accordion>
@@ -127,7 +122,6 @@ function Educations() {
         </Accordion>
       </Paper>
     </Container>
-    // </ThemeProvider>
   );
 }
 

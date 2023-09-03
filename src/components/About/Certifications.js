@@ -27,7 +27,6 @@ function Certifications() {
   }));
 
   return (
-    // <ThemeProvider theme={theme}>
       <Container maxWidth="sm">
         <Paper elevation={3} style={{ marginBottom: "20px" }}>
           <Accordion>
@@ -184,14 +183,12 @@ function Certifications() {
                     </List>
                   </AccordionDetails>
                 </Accordion>
-                
-
+              
               </Box>
             </AccordionDetails>
           </Accordion>
         </Paper>
       </Container>
-    // </ThemeProvider>
   );
 }
 
