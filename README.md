@@ -87,4 +87,4 @@
 
 ## 🧱아키텍처
 
-![Alt text](src/assets/images/architecture.png)
+![Alt text](src/assets/images/portfolio_architecture.png)
