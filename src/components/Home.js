@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Container, Grid } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 import { styled } from "@mui/system";
 import profileImage from "../assets/images/umbrella.jpg";
 
