@@ -30,7 +30,7 @@ function Home() {
           <br />
           <HighlightedText>백엔드 개발자</HighlightedText>를 지향하고 있으며
           다른 개발 포지션과의 원활한 커뮤니케이션을 위해 프론트엔드, 인프라도
-          병행 학습하고 있습니다.te
+          병행 학습하고 있습니다.
         </Typography>
       </Grid>
       <Grid item xs={12} md={6} container justifyContent="flex-end">
