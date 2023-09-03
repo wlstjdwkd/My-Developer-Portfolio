@@ -19,7 +19,7 @@ services:
       context: .
       dockerfile: dockerfiles/Dockerfile.react
     ports:
-      - "80:80"
+      - "8081:80"
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
 
