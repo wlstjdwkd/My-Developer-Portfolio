@@ -13,10 +13,18 @@ function Footer() {
             © 2023 방진성. All rights reserved.
           </Typography>
           <Box>
-            <IconButton color="inherit" href="https://github.com/wlstjdwkd">
+            <IconButton
+              color="inherit"
+              href="https://github.com/wlstjdwkd"
+              target="_blank"
+            >
               <GitHubIcon />
             </IconButton>
-            <IconButton color="inherit" href="https://velog.io/@wlstjdwkd">
+            <IconButton
+              color="inherit"
+              href="https://velog.io/@wlstjdwkd"
+              target="_blank"
+            >
               <img
                 src={velogIcon}
                 alt="Velog Icon"
@@ -28,6 +36,7 @@ function Footer() {
             <IconButton
               color="inherit"
               href="https://www.instagram.com/bvng._.mooomiin/"
+              target="_blank"
             >
               <InstagramIcon />
             </IconButton>
