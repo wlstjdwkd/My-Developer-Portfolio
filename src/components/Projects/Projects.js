@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Card,
   CardActionArea,
@@ -6,11 +6,19 @@ import {
   CardContent,
   Typography,
   Grid,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  DialogActions,
+  Button,
 } from "@mui/material";
 
 import stopwaitingImage from "../../assets/images/stopwaiting.png";
 import weffyImage from "../../assets/images/WEFFY.png";
 import umbrellaImage from "../../assets/images/umbrella.jpg";
+import techblue from "../../assets/images/techblue.png";
+import ReactMarkdown from "react-markdown";
 
 const projects = [
   {
@@ -21,9 +29,9 @@ const projects = [
   },
   {
     title: "중소기업형 인사급여휴가관리 시스템",
-    description: "This is a brief description about project 2.",
-    imageUrl: "path_to_project_2_image.jpg",
-    projectUrl: "http://example2.com",
+    description: "실무자 협업 프로젝트",
+    imageUrl: techblue,
+    projectUrl: "https://github.com/wlstjdwkd/Company-Management-System",
   },
   {
     title: "WEFFY",
@@ -48,6 +56,18 @@ const projects = [
 ];
 
 function Projects() {
+  const [open, setOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleOpen = (project) => {
+    setSelectedProject(project);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <Grid container spacing={4}>
       {projects.map((project, index) => (
