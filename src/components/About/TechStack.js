@@ -10,6 +10,7 @@ import { styled } from "@mui/system";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Skills from "./Skills";
 import springbootImage from "../../assets/images/springboot.png";
+import reactnativeImage from "../../assets/images/react_native.png";
 
 function TechStack() {
   return (
@@ -46,6 +47,11 @@ function TechStack() {
         "
             label="React"
             proficiency={70}
+          />
+          <Skills
+            imageURL={reactnativeImage}
+            label="ReactNative"
+            proficiency={60}
           />
           <Skills
             imageURL="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg
