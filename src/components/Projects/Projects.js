@@ -18,6 +18,7 @@ import stopwaitingImage from "../../assets/images/stopwaiting.png";
 import weffyImage from "../../assets/images/WEFFY.png";
 import umbrellaImage from "../../assets/images/umbrella.jpg";
 import techblue from "../../assets/images/techblue.png";
+import yongyongLogo from "../../assets/images/yongyongLogo.png";
 import ReactMarkdown from "react-markdown";
 
 const projects = [
@@ -46,10 +47,11 @@ const projects = [
     projectUrl: "https://github.com/wlstjdwkd/My-Developer-Portfolio",
   },
   {
-    title: "포도은행 + 디비딩",
-    description: "핀테크 프로젝트(진행중)",
-    imageUrl: umbrellaImage,
-    projectUrl: "",
+    title: "포도은행 & 도토리",
+    description:
+      "자체 은행 서비스 ‘포도은행’과 목표와 저축으로 계획적인 금융 습관을 만드는 서비스 ‘도토리’",
+    imageUrl: yongyongLogo,
+    projectUrl: "https://github.com/wlstjdwkd/PodoBank-Dotori",
   },
 
   // ... 여러 프로젝트들을 추가하세요
