@@ -20,9 +20,9 @@ function Header() {
         <Button color="inherit" component={RouterLink} to="/projects">
           Projects
         </Button>
-        <Button color="inherit" component={RouterLink} to="/contact">
+        {/* <Button color="inherit" component={RouterLink} to="/contact">
           Contact
-        </Button>
+        </Button> */}
       </Toolbar>
     </AppBar>
   );
